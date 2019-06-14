@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Quote from './components/Quote';
+import GetQuoteButton from './components/GetQuote';
+import { getKanyeQuote } from "../src/api";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    quote: ''
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Quote quote={this.state.quote} />
+        <GetQuoteButton handleClick={this.handleClick} />
+      </div>
+    );
+  }
+
+  handleClick = () => {
+    getKanyeQuote()
+      .then(quote => {
+        this.setState({ quote })
+      })
+  }
 }
 
 export default App;
