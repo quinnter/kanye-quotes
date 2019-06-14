@@ -13,9 +13,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Quote quote={this.state.quote} />
-        <GetQuoteButton handleClick={this.handleClick} />
+        <>
+          <Header />
+          <Quote quote={this.state.quote} />
+          <GetQuoteButton handleClick={this.handleClick} />
+        </>
       </div>
     );
   }
