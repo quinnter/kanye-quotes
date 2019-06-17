@@ -1,15 +1,15 @@
 @import url("http://mcansh.github.io/yeezy-logo-font/assets/css/font.css");
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .Kanye-Face {
   animation: Kanye-Face-spin infinite 15s linear;
   height: 40vmin;
   pointer-events: all;
   cursor: crosshair;
-  /* float: left; */
+  z-index: 1;
 }
 
 .Resting-Kanye {
@@ -26,6 +26,13 @@
   }
 }
 
+.SpotifyPlayer {
+  /* display: flex; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+
 .border {
   position:relative; 
   width:40vmin; 
@@ -36,9 +43,10 @@
   -webkit-border-radius:15px;
   -moz-border-radius:15px;
   border-radius:15px;
-  display: block;
+  /* display: block; */
   margin-left: auto;
   margin-right: auto;
+  z-index: 2;
   }
 
   .border:before {
@@ -49,7 +57,7 @@
   border-width:35px 35px 0 35px; 
   border-style:solid;
   border-color:  #3e0571 transparent; 
-  display:block;
+  /* display:block; */
   }
 
   .border:after {
@@ -60,5 +68,40 @@
   border-width:20px 20px 0 20px;
   border-style:solid;
   border-color: #fff transparent; 
-  display:block;
+  /* display:block; */
+  }
+
+  .container {
+    /* position: relative; */
+    height: 100vh;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ /* align-content: ; */
+ /* align-items: space-between; */
+  }
+
+  .iconContainer {
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background-color: #3e0571;
+    border-radius: 15px;
+    z-index: 2;
+    margin-bottom: 50px;
+  }
+
+  .musicControls {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto; 
+    bottom: 1vh;
+  
   }

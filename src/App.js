@@ -4,7 +4,9 @@ import Header from './components/Header';
 import Quote from './components/Quote';
 import GetQuoteButton from './components/GetQuote';
 import { getKanyeQuote } from "../src/api";
-import kanyeface from "../src/assests/kanyeface.svg"
+import PickSong from './components/PickSong';
+
+
 
 class App extends React.Component {
   state = {
@@ -13,13 +15,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <>
-          <Header />
-          {/* <img src={kanyeface} alt="Kanyes Face" className="Resting-Kanye" /> */}
-          <Quote quote={this.state.quote} />
-          <GetQuoteButton handleClick={this.handleClick} />
-        </>
+      <div className="container">
+
+        <Header />
+        <Quote quote={this.state.quote} />
+        <GetQuoteButton handleClick={this.handleClick} />
+        {/* <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7qQG2hCGiwy" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" className="SpotifyPlayer" title="Spotify"></iframe> */}
+        <PickSong />
       </div>
     );
   }
@@ -34,4 +36,3 @@ class App extends React.Component {
 
 export default App;
 
-{/* <a href="yourmusicfile.mp3">Play music</a>  */ }
