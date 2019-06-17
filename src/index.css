@@ -1,12 +1,17 @@
+@import url("http://mcansh.github.io/yeezy-logo-font/assets/css/font.css");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
+    font-family: 'Yeezy', sans-serif;
+    font-size: 35px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
   background-image: linear-gradient(to top right , rgb(234, 124, 58), rgb(159, 50, 96), rgb(93, 54, 131));
-  height: 100%; 
+  height: 100vh; 
 }
 
 code {

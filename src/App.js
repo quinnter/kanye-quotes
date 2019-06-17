@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Quote from './components/Quote';
 import GetQuoteButton from './components/GetQuote';
 import { getKanyeQuote } from "../src/api";
+import kanyeface from "../src/assests/kanyeface.svg"
 
 class App extends React.Component {
   state = {
@@ -15,6 +16,7 @@ class App extends React.Component {
       <div className="App">
         <>
           <Header />
+          {/* <img src={kanyeface} alt="Kanyes Face" className="Resting-Kanye" /> */}
           <Quote quote={this.state.quote} />
           <GetQuoteButton handleClick={this.handleClick} />
         </>
@@ -31,3 +33,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+{/* <a href="yourmusicfile.mp3">Play music</a>  */ }

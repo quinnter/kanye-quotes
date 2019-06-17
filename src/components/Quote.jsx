@@ -3,7 +3,7 @@ import React from 'react'
 
 const Quote = (props) => {
     return (
-        <div>
+        <div className='border'>
             <p>{props.quote}</p>
         </div>
     )

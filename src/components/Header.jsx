@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Header() {
     return (
-            <header>
-                <h1>
-                    Kanye Says...
+        <header>
+            <h1>
+                Kanye Says...
                 </h1>
-            </header>
+        </header>
     )
 }
